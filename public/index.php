@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $response = '¡Mensaje enviado! Gracias por contactarnos.';
 
         $body = "Nombre: $name <br> Email: $email <br> Mensaje: $message";
-        sendMail($subject, $body, $email, $name, true);
+        sendMail($subject, $body, $name, true);
     } else {
         $status = 'error';
         $response = '¡Error! Por favor, complete el formulario y vuelva a intentarlo.';
